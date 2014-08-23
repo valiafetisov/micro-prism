@@ -1,0 +1,30 @@
+<head>
+  <title>micro-prism</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
+  <meta http-equiv='X-UA-Compatible' content='chrome=1' />
+  <base target='_blank'>
+</head>
+
+<body>
+  {{> video_box}}
+</body>
+
+<template name="video_box">
+  <div id='container'>
+
+    <!-- <div class='select'>
+      <label for='audioSource'>Audio source: </label><select id='audioSource'></select>
+    </div> -->
+
+    <div class='select'>
+      <label for='videoSource'>Video source: </label><select id='videoSource'></select>
+    </div>
+    
+    video<br>
+    <video muted></video>
+    <br/>
+    fd canvas<br>
+    <canvas id='framedifference'></canvas>
+
+  </div>
+</template>
